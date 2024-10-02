@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: ease all 0.3s;
+    padding: 3px;
+}
+.active,
+a:hover{
+    color: #fff;
+    background: #0c90d1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    border-bottom: solid 1px #000;
+}
+
+.nav-left{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.nav-center{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right{
+    display: flex;
+    gap: 10px;
+}
+
+.stroke{
+    width: 2px;
+    background: black;
+}
+
+.sidebar{
+    position: fixed;
+    right: 0;
+    background: #0c90d1;
+    top: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    padding: 2rem;
+}
+
+.sidebar a{
+    font-size: 25px;
+    color: white;
+    padding: 10px 0;
+}
+
+.sidebar a:hover{
+    color: aqua;
+}
+
+.close{
+    background: white;
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.close:hover{
+    background: #b5ddf1;
+}
+
+.menu{
+    font-size: 25px;
+    display: none;
+}
+
+@media(max-width:900px){
+    .menu{
+        font-size: 25px;
+        display: block;
+    }
+    
+.nav-center{
+    display: none;
+}
+
+.nav-right{
+    display: none;
+}
+
+}
+
+/* hero section */
+
+.hero{
+    display: flex;
+    height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction: column;
+        height: fit-content;
+        gap: 1rem;
+    }
+    .hero-left{
+        width: 100% !important;;
+    }
+
+    .hero-right{
+        width: 100% !important;
+        height: 40vh;
+    }
+}
+
+@media(max-width:400px){
+    button{
+        font-size: 14px !important;
+    }
+}
+
+.hero-left{
+    display: flex;
+    width: 50%;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-left h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.hero-right{
+    width: 50%;
+    background-image:linear-gradient(rgba(149, 149, 149, 0.294), rgba(27, 26, 26, 0.4)), url('/image/landscape.jpg');
+    background-size: cover;
+    background-position: right;
+    padding: 2rem;
+}
+
+.cover{
+    border: solid 2px #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover h2{
+    color:#fff;
+    font-size: 50px;
+}
+button{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    width: 30%;
+    height:6vh ;
+    font-size: 20px;
+    transition: ease all 0.3s;
+}
+
+button:hover{
+    background: #3d3c3c;
+    transform: translateY(-5px);
+}
+
