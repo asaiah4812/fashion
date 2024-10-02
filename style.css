@@ -150,7 +150,7 @@ text-align: center;
 }
 .hero-right{
     width: 50%;
-    background-image:linear-gradient(rgba(149, 149, 149, 0.294), rgba(27, 26, 26, 0.4)), url('/image/landscape.jpg');
+    background-image:linear-gradient(rgba(149, 149, 149, 0.294), rgba(27, 26, 26, 0.4)), url('image/landscape.jpg');
     background-size: cover;
     background-position: right;
     padding: 2rem;
